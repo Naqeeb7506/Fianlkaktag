@@ -1,0 +1,309 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+/* navbar start */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+.navbar .logo {
+  width: 160px;
+}
+.navbar .logo img {
+  width: 100%;
+}
+
+.navbar .menu {
+  width: 20px;
+  display: none;
+}
+.navbar .menu img {
+  width: 100%;
+}
+/* navbar end */
+
+/* main start */
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.main .tree {
+  z-index: 10;
+  width: 700px;
+  position: relative;
+  top: -88px;
+}
+
+.main .tree img {
+  width: 100%;
+}
+
+.main .tree .btns a {
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.btns .btn1 {
+  position: absolute;
+  top: 8%;
+  right: 14%;
+}
+.btns .btn2 {
+  position: absolute;
+  top: 23%;
+  right: 18%;
+}
+.btns .btn3 {
+  position: absolute;
+  top: 40%;
+  right: 3%;
+}
+.btns .btn4 {
+  position: absolute;
+  top: 36%;
+  left: 4%;
+}
+.btns .btn5 {
+  position: absolute;
+  top: 18%;
+  left: 18%;
+}
+.main .main-content {
+  background-color: #f7f7f7;
+  height: 260px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  /* padding: 0px 50px; */
+  padding-bottom: 36px;
+  z-index: 1;
+  position: absolute;
+  bottom: -8%;
+  font-size: 16px;
+}
+
+.main .main-content h2 {
+  width: 70%;
+}
+.temp-br {
+  display: none;
+}
+
+.left-leaf {
+  position: absolute;
+  top: 16%;
+  left: 20%;
+}
+
+.right-leaf {
+  position: absolute;
+  top: 10%;
+  right: 16%;
+  width: 50px;
+}
+.right-leaf img{
+  width: 100%;
+}
+
+.bottom-leaf {
+  display: none;
+}
+/* main end */
+
+/* ABout us start */
+.about,
+.about-kaktag{
+  width: 100%;
+  position: relative;
+  padding-bottom: 50px;
+}
+.about .about-content{
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 70px;
+}
+.about h2,
+.about-kaktag h2,
+.vertical .vertical-container h2 {
+  font-size: 25px;
+  padding: 20px 0px;
+}
+.about p,
+.about-kaktag p,
+.vertical .vertical-container .vertical-content p{
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 500;
+  padding-right: 50px;
+}
+.about .about-leaf {
+  position: absolute;
+  top: 24%;
+  right: 10%;
+  width: 30px;
+}
+.about .about-leaf img{
+  width: 100%;
+}
+/* ABout us end */
+
+/* vertical start */
+.vertical{
+  width: 100%;
+  position: relative;
+  background-color: #f7f7f7;
+  padding: 30px 0px;
+}
+.vertical .vleaf{
+  position: absolute;
+  top: 0%;
+  right: 1%;
+  width: 200px;
+}
+.vertical .left-leaf{
+  width: 50px;
+  display: none;
+}
+.vertical .left-leaf img{
+  width: 100%;
+}
+.vertical .right-leaf{
+  display: none;
+}
+.vertical .vleaf img{
+  width: 100%;
+}
+.vertical .vertical-container{
+  width: 70%;
+  margin: 0 auto;
+}
+.cards{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  align-items: center ;
+  padding-top: 20px;
+}
+.cards .card{
+  width: 210px;
+  height: 160px;
+  padding: 16px 0px;
+  background-color: #fff;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+}
+.cards .card p{
+  padding-top: 5px;
+}
+.cards .card:hover{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transform: scale(1.01);
+}
+.cards .card .companyimg{
+  padding-top: 20px;
+}
+.cards .card .companyimg img{
+  width: 100%;
+}
+/* vertical end */
+
+/* About kaktag start */
+.about-kaktag .about-kaktag-content {
+  width: 70%;
+  margin: 0 auto;
+}
+.about-kaktag .about-kleaf {
+  position: absolute;
+  bottom: 15%;
+  left: 30%;
+}
+/* About kaktag end */
+
+/* footer start */
+
+footer{
+  background-color: #f7f7f7;
+}
+.footer-container{
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0px;
+  position: relative;
+}
+
+.footer-container .links ul{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.footer-container .links ul li{
+  list-style: none;
+  color: black;
+}
+.footer-container .links ul li a{
+  text-decoration: none;
+  color: black;
+  padding-right: 15px;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+}
+.footer-container .logo{
+  width: 100px;
+}
+.footer-container .logo img{
+  width: 100%;
+}
+.footer-container .links p{
+  padding-top: 20px;
+  color: #666666;
+}
+.footer-container .links ul li a:hover{
+  color: #729419;
+}
+
+.footer-container .go-to-top{
+  position: absolute;
+  top: -20px;
+  right: 0%;
+  width: 40px;
+}
+.footer-container .go-to-top img{
+  width: 100%;
+}
+/* footer end */
+
