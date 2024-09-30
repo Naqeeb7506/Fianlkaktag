@@ -18,22 +18,40 @@
         <img src="Images/kaktag-logo.png" alt="logo" />
       </a>
     </div>
-    <div class="menu">
+    <div class="menu" id="hamburger">
       <img src="Images/menu.svg" alt="menu" />
     </div>
+
+    <div class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+          <div class="sidebar-logo">
+            <img src="Images/sidebar-logo.png" alt="sidebar">
+          </div>
+          <button class="close-btn" id="close-btn">&times;</button>
+      </div>
+      <ul class="sidebar-links">
+          <li><a href="#">Agri Tech</a></li>
+          <li><a href="#">Bio Tech</a></li>
+          <li><a href="#">Deep Tech</a></li>
+          <li><a href="#">Consumer Tech</a></li>
+          <li id="aboutus"><a href="#" >About Us</a></li>
+      </ul>
+  </div>
+
   </nav>
   <!-- navbar end -->
 
   <!-- main start -->
   <div class="main">
     <div class="tree">
-      <img src="Images/tree.svg" alt="tree" />
+      <img src="Images/tree.svg" alt="tree" id="tree"/>
+      <img src="Images/mdottree.svg" alt="mdot" id="mdottree">
       <div class="btns">
-        <a href="#" class="btn1">Deep <span class="temp-br"><br /></span> Tech</a>
-        <a href="#" class="btn2">Consumer <br />Tech</a>
-        <a href="#" class="btn3">About <span class="temp-br"><br /></span> Us</a>
-        <a href="#" class="btn4">Agri <span class="temp-br"><br /></span> Tech</a>
-        <a href="#" class="btn5">Bio <span class="temp-br"><br /></span> Tech</a>
+        <a href="#vertical" class="btn1">Deep <span class="temp-br"><br /></span> Tech</a>
+        <a href="#vertical" class="btn2">Consumer <br />Tech</a>
+        <a href="#about" class="btn3">About <span class="temp-br"><br /></span> Us</a>
+        <a href="#vertical" class="btn4">Agri <span class="temp-br"><br /></span> Tech</a>
+        <a href="#vertical" class="btn5">Bio <span class="temp-br"><br /></span> Tech</a>
       </div>
     </div>
     <div class="main-content">
@@ -46,20 +64,20 @@
       <div class="bottom-leaf">
         <img src="Images/bottom-leaf.svg" alt="bottom-leaf" />
       </div>
-      <h2>
+      <p>
         <span style="color: #618f1f">Kaktag invests in early-stage founders
         </span>
         and tech innovators driven by passion. We back those who tackle
         real-world challenges and dream of making a positive impact on their
         communities, nation and beyond.
-      </h2>
+      </p>
     </div>
   </div>
   <!-- main end -->
 
   <!-- <div style="display: none;"> -->
   <!-- About us start -->
-  <div class="about">
+  <div class="about" id="about">
     <div class="about-content">
       <h2>About Us</h2>
       <p>
@@ -77,7 +95,7 @@
   <!-- About us end -->
 
   <!-- vertical start -->
-  <div class="vertical">
+  <div class="vertical" id="vertical">
     <div class="vleaf">
       <img src="Images/vertical-tree.svg" alt="tree">
     </div>
@@ -89,7 +107,7 @@
     </div>
     <div class="vertical-container">
       <div class="vertical-content">
-        <h2>Verticals</h2>
+        <h2>Portfolio</h2>
         <p>
           We invest our own funds, earned through our own ventures. While we focus on select areas and verticals, we’re
           always open to hearing your story if you believe it should be heard. Our current investments are in the
@@ -158,15 +176,15 @@
 
     <div class="footer-container">
       <div class="go-to-top">
-        <img src="Images/gototop.svg" alt="top" id="scrollToTopBtn">
+        <img src="Images/gototop.svg" alt="top" id="scrollToTopBtn" style="cursor: pointer;">
       </div>
       <div class="links">
         <ul>
-          <li><a href="#" class="active">Agri Tech</a>|</li>
-          <li><a href="#">Bio Tech</a>|</li>
-          <li><a href="#">Consumer Tech</a>|</li>
-          <li><a href="#">Deep Tech</a>|</li>
-          <li><a href="#">About Us</a></li>
+          <li><a href="#vertical">Agri Tech</a>|</li>
+          <li><a href="#vertical">Bio Tech</a>|</li>
+          <li><a href="#vertical">Consumer Tech</a>|</li>
+          <li><a href="#vertical">Deep Tech</a>|</li>
+          <li><a href="#about">About Us</a></li>
         </ul>
         <p>&copy; 2024 Kaktag. All Rights Reserved.</p>
       </div>
@@ -199,6 +217,27 @@ scrollToTopBtn.addEventListener("click", function() {
         behavior: "smooth"
     });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const hamburger = document.getElementById('hamburger');
+    const sidebar = document.getElementById('sidebar');
+    const closeBtn = document.getElementById('close-btn');
+
+    hamburger.addEventListener('click', () => {
+        sidebar.style.display = 'block'; 
+        setTimeout(() => {
+            sidebar.classList.add('open'); 
+        }, 10); 
+    });
+
+    closeBtn.addEventListener('click', () => {
+        sidebar.classList.remove('open'); 
+        setTimeout(() => {
+            sidebar.style.display = 'none'; 
+        }, 500); 
+    });
+});
+
 </script>
 </body>
 
