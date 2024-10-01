@@ -41,22 +41,22 @@ document.addEventListener("DOMContentLoaded", () => {
     window.addEventListener("scroll", checkScroll);
 
     const hamburger = document.getElementById("hamburger");
-    const sidebar = document.getElementById("sidebar");
-    const closeBtn = document.getElementById("close-btn");
+const sidebar = document.getElementById("sidebar");
+const closeBtn = document.getElementById("close-btn");
 
-    hamburger.addEventListener("click", () => {
-        sidebar.style.display = "block";
-        sidebar.classList.add("open");
-        element.style.display = "none";  // Hide mainTree when sidebar is open
-    });
+hamburger.addEventListener("click", () => {
+    sidebar.style.visibility = "visible"; // Make it visible before applying transitions
+    sidebar.classList.add("open");
+    element.style.display = "none";  // Hide mainTree when sidebar is open
+});
 
-    closeBtn.addEventListener("click", () => {
-        sidebar.classList.remove("open");
-        setTimeout(() => {
-            sidebar.style.display = "none";
-            element.style.display = "block";  // Show mainTree when sidebar is closed
-            checkScroll(); // Recheck scroll position after sidebar closes
-        }, 500);
-    });
+closeBtn.addEventListener("click", () => {
+    sidebar.classList.remove("open");
+    setTimeout(() => {
+        sidebar.style.visibility = "hidden"; // Use visibility instead of display
+        element.style.display = "block";  // Show mainTree when sidebar is closed
+        checkScroll(); // Recheck scroll position after sidebar closes
+    }, 500); // Match the CSS transition duration
+});
 });
 
