@@ -8,50 +8,60 @@
   <!-- css -->
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="responsive.css">
+  <!-- <script type="text/javascript">
+        if(window.location.protocol!=="https:"){
+        window.location.href = window.location.href.replace("http:","https:");
+        }
+        </script> -->
 </head>
 
 <body>
   <!-- navbar start -->
-  <nav class="navbar">
-    <div class="logo">
-      <a href="index.html">
-        <img src="Images/kaktag-logo.png" alt="logo" />
-      </a>
-    </div>
-    <div class="menu" id="hamburger">
-      <img src="Images/menu.svg" alt="menu" />
-    </div>
-
-    <div class="sidebar" id="sidebar">
-      <div class="sidebar-header">
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <a href="index.html">
+          <img src="Images/kaktag-logo.png" alt="logo" />
+        </a>
+      </div>
+      <div class="menu" id="hamburger">
+        <img src="Images/menu.svg" alt="menu" />
+      </div>
+  
+      <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
           <div class="sidebar-logo">
             <img src="Images/sidebar-logo.png" alt="sidebar">
           </div>
           <button class="close-btn" id="close-btn">&times;</button>
+        </div>
+        <ul class="sidebar-links">
+          <li><a href="#about">Approach</a></li>
+          <li><a href="#vertical">Portfoilio</a></li>
+          <li><a href="#kaktag">About Kaktag</a></li>
+          <li><a href="#impact">Impact</a></li>
+          <!-- <li id="aboutus"><a href="#">About Us</a></li> -->
+        </ul>
       </div>
-      <ul class="sidebar-links">
-          <li><a href="#">Agri Tech</a></li>
-          <li><a href="#">Bio Tech</a></li>
-          <li><a href="#">Deep Tech</a></li>
-          <li><a href="#">Consumer Tech</a></li>
-          <li id="aboutus"><a href="#" >About Us</a></li>
-      </ul>
-  </div>
+    </div>
+
+
 
   </nav>
+  <div class="dummy-nav"></div>
   <!-- navbar end -->
 
   <!-- main start -->
   <div class="main">
-    <div class="tree">
-      <img src="Images/tree.svg" alt="tree" id="tree"/>
+    <div class="tree" id="mainTree">
+      <img src="Images/tree.svg" alt="tree" id="tree" />
       <img src="Images/mdottree.svg" alt="mdot" id="mdottree">
       <div class="btns">
-        <a href="#vertical" class="btn1">Deep <span class="temp-br"><br /></span> Tech</a>
-        <a href="#vertical" class="btn2">Consumer <br />Tech</a>
-        <a href="#about" class="btn3">About <span class="temp-br"><br /></span> Us</a>
-        <a href="#vertical" class="btn4">Agri <span class="temp-br"><br /></span> Tech</a>
-        <a href="#vertical" class="btn5">Bio <span class="temp-br"><br /></span> Tech</a>
+        <a href="#kaktag" class="btn1">About <span class="temp-br"><br /></span> Kaktag</a>
+        <!-- <a href="#vertical" class="btn2">Portfolio</a> -->
+        <a href="#impact" class="btn3">Impact</a>
+        <a href="#vertical" class="btn4">Portfolio</a>
+        <a href="#about" class="btn5">Approach </a>
       </div>
     </div>
     <div class="main-content">
@@ -79,18 +89,15 @@
   <!-- About us start -->
   <div class="about" id="about">
     <div class="about-content">
-      <h2>About Us</h2>
+      <h2>Approach</h2>
       <p>
-        Kaktag was created by founders who get how tough it can be to turn a
-        dream into reality, from the first idea to launching and scaling. When
-        we invest in you, we're with you every step of the way—like a good
-        friend, helping and guiding you. We always put your interests as a
-        founder first.
+        Kaktag was created by founders who understand how tough it can be to turn a dream into reality, from the first idea to launching and scaling. When we invest in you, we’re with you every step of the way—like a good friend, helping and guiding you. We always put your interests as a founder first. We are committed to helping you understand and adapt to market changes, timing, and trends in a way that benefits everyone.
       </p>
     </div>
     <div class="about-leaf">
       <img src="Images/about-leaf.svg" alt="about-leaf" />
     </div>
+    
   </div>
   <!-- About us end -->
 
@@ -109,56 +116,120 @@
       <div class="vertical-content">
         <h2>Portfolio</h2>
         <p>
-          We invest our own funds, earned through our own ventures. While we focus on select areas and verticals, we’re
-          always open to hearing your story if you believe it should be heard. Our current investments are in the
-          following areas:
+          We invest our own funds, earned through our own ventures. While we focus on select areas and verticals, we’re always open to hearing your story if you believe it should be heard. 
         </p>
       </div>
-      <div class="cards">
-        <div class="card">
-          <h3 style="color: #729419;">Agri Tech</h3>
-          <p>Dehaat</p>
-          <div class="companyimg">
-            <img src="Images/Dehaat.svg" alt="Dehaat">
+      <!-- cards start here -->
+    <div class="cards">
+      <div class="portleaf">
+        <img src="Images/portfolio-leaf.svg" alt="" />
+      </div>
+      <div class="card-container">
+        <div class="card card1">
+          <div class="top">
+            <div class="card-img">
+              <img src="Images/Dehaat.svg" alt="" />
+            </div>
+            <div class="card-text">
+              <p>
+                Agri Tech- Dehaat is a fast-growing Agri-Tech startup in India,
+                offering end-to-end solutions for the farming community.
+              </p>
+            </div>
+          </div>
+          <div class="bottom">
+            <span></span>
+            <p>Agri Tech</p>
+            <span></span>
           </div>
         </div>
-        <div class="card">
-          <h3 style="color:#e95a00;">Bio Tech</h3>
-          <p>BeGalileo</p>
-          <div class="companyimg">
-            <img src="Images/Begalileo.svg" alt="Begalileo">
+        <div class="card card2">
+          <div class="top">
+            <div class="card-img">
+              <img src="Images/Gramik.svg" alt="" />
+            </div>
+            <div class="card-text">
+              <p>
+                Gramik supplies quality seeds, agrochemicals, fertilizers, and
+                other products to the farmers right at their doorstep.
+              </p>
+            </div>
+          </div>
+          <div class="bottom">
+            <span></span>
+            <p>Agri Tech</p>
+            <span></span>
           </div>
         </div>
-        <div class="card">
-          <h3 style="color: #a66b4d;">Consumer Tech</h3>
-          <p>Krishidoot</p>
-          <div class="companyimg" id="krishidoot">
-            <img src="Images/Krishidoot.svg" alt="Krishidoot">
+        <div class="card card3">
+          <div class="top">
+            <div class="card-img">
+              <img src="Images/Krishidoot.svg" alt="" />
+            </div>
+            <div class="card-text">
+              <p>
+                Krishidoot Bio Herbals Pvt. Ltd., founded in 2005, produces
+                ISO-certified organic and herbal products for global markets.
+              </p>
+            </div>
+          </div>
+          <div class="bottom">
+            <span></span>
+            <p>Bio Tech</p>
+            <span></span>
           </div>
         </div>
-        <div class="card">
-          <h3 style="color: #9e72c7;">Deep Tech</h3>
-          <p>Blue Ocean Systems <br> Software
-          </p>
-          <div class="companyimg" style="padding-top: 36px;" id="Blue-Ocean">
-            <img src="Images/Blue-Ocean.svg" alt="Blue-Ocean">
+        <div class="card card4">
+          <div class="top">
+            <div class="card-img">
+              <img src="Images/beGalileo.svg" alt="" />
+            </div>
+            <div class="card-text">
+              <p>
+                beGalileo focuses on a 360-degree math learning approach,
+                emphasizing understanding, problem-solving, and real-life
+                application.
+              </p>
+            </div>
+          </div>
+          <div class="bottom">
+            <span></span>
+            <p>Ed Tech</p>
+            <span></span>
+          </div>
+        </div>
+        <div class="card card5">
+          <div class="top">
+            <div class="card-img">
+              <img src="Images/Dehaat.svg" alt="" />
+            </div>
+            <div class="card-text">
+              <p>
+                Blue Ocean's SAP software streamlines business efficiency,
+                simplifying billing and accounting with a mobile-friendly
+                platform.
+              </p>
+            </div>
+          </div>
+          <div class="bottom">
+            <span></span>
+            <p>Deep Tech</p>
+            <span></span>
           </div>
         </div>
       </div>
+    </div>
+    <!-- cards end here -->
     </div>
   </div>
   <!-- vertical end -->
 
   <!-- About kaktag start -->
-  <div class="about-kaktag">
+  <div class="about-kaktag" id="kaktag">
     <div class="about-kaktag-content">
       <h2>About Kaktag</h2>
       <p style="padding-bottom: 20px">
-        We're entrepreneurs first, and while we understand investing, we focus
-        on products, strategy, markets, and tech. We don't want to bog you
-        down with cap tables or tough terms—we want you to focus on building,
-        not worrying about those details early on. If you see our bio, you'll
-        know why
+        We’re entrepreneurs first and while we understand investing, we focus on products, strategy, markets and tech. We are deeply committed to growing the businesses in which we invest; we take an active approach to those investments and aim to build great companies with a bright long-term future. We don’t want to bog you down with cap tables or tough terms—we want you to focus on building, not worrying about those details early on. If you see our investing partners’ bio,  you’ll know why we love founders.
       </p>
       <p>
         - Faisal Farooqui <br />
@@ -170,6 +241,16 @@
     </div>
   </div>
   <!-- About kaktag end -->
+   <!-- impact start -->
+    <div class="impact" id="impact">
+      <div class="impact-container">
+        <h2>Impact</h2>
+        <div class="impact-text">
+          <p>At Kaktag, we love founders with the passion to bring about real change. For us, it's not just about business success or returns on investment – it's about supporting those who are deeply committed to solving problems. Our goal is to make a lasting impact and improve lives, step by step.</p>
+        </div>
+      </div>
+    </div>
+   <!-- impact end -->
 
   <!-- footer start -->
   <footer>
@@ -180,11 +261,11 @@
       </div>
       <div class="links">
         <ul>
-          <li><a href="#vertical">Agri Tech</a>|</li>
-          <li><a href="#vertical">Bio Tech</a>|</li>
-          <li><a href="#vertical">Consumer Tech</a>|</li>
-          <li><a href="#vertical">Deep Tech</a>|</li>
-          <li><a href="#about">About Us</a></li>
+          <li><a href="#about">Approach</a>|</li>
+          <li><a href="#vertical">Portfolio</a>|</li>
+          <li><a href="#kaktag">About Kaktag</a>|</li>
+          <li><a href="#impact">Impact</a></li>
+      
         </ul>
         <p>&copy; 2024 Kaktag. All Rights Reserved.</p>
       </div>
@@ -194,51 +275,10 @@
     </div>
   </footer>
   <!-- footer end -->
-<!-- </div> -->
+  <!-- </div> -->
 
 
-<script>
-  // Get the button
-const scrollToTopBtn = document.getElementById("scrollToTopBtn");
-
-// Show the button when the user scrolls down 100px from the top of the document
-window.onscroll = function() {
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        scrollToTopBtn.style.display = "block";
-    } else {
-        scrollToTopBtn.style.display = "none";
-    }
-};
-
-// When the user clicks the button, scroll to the top of the document
-scrollToTopBtn.addEventListener("click", function() {
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-    });
-});
-
-document.addEventListener('DOMContentLoaded', () => {
-    const hamburger = document.getElementById('hamburger');
-    const sidebar = document.getElementById('sidebar');
-    const closeBtn = document.getElementById('close-btn');
-
-    hamburger.addEventListener('click', () => {
-        sidebar.style.display = 'block'; 
-        setTimeout(() => {
-            sidebar.classList.add('open'); 
-        }, 10); 
-    });
-
-    closeBtn.addEventListener('click', () => {
-        sidebar.classList.remove('open'); 
-        setTimeout(() => {
-            sidebar.style.display = 'none'; 
-        }, 500); 
-    });
-});
-
-</script>
+  <script src="script.js"></script>
 </body>
 
 </html>

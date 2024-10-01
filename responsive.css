@@ -1,67 +1,47 @@
 /* responsive start */
-@media (max-width: 1250px) {
-    .main .main-content {
-      bottom: 0%;
-    }
-    .btns .btn1 {
-      top: 8%;
-      right: 15%;
-    }
-    .btns .btn2 {
-      top: 23%;
-      right: 18%;
-    }
-    .btns .btn3 {
-      top: 40%;
-      right: 4%;
-    }
-    .btns .btn4 {
-      top: 36%;
-      left: 4%;
-    }
-    .btns .btn5 {
-      top: 18%;
-      left: 18%;
-    }
+@media (max-width: 1260px) {
     /* .about .about-content {
       margin-top: 100px;
     } */
-    .cards .card{
-        width: 190px;
-    }
+    /* .cards .card{
+        width: 220px;
+    } */
     .cards .card .companyimg{
         width: 150px;
     }
-    #krishidoot{
-        width: 70px;
-    }
+   
+    /* .cards{
+      flex-wrap: wrap;
+    } */
   }
 
   @media (max-width: 1150px){
-    .cards .card{
+    /* .cards .card{
         width: 180px;
+    } */
+    .cards .card .card-text{
+      height: 105px;
     }
+   
   }
   @media (max-width: 1050px) {
     .main .main-content {
-    height: 230px;
+    
       font-size: 14px;
       padding-bottom: 10px;
-      bottom: -3%;
+  
     }
     .about .about-content {
-      margin-top: 20px;
+      margin-top: 5px;
     }
     .cards .card{
-        width: 170px;
-        /* height: 140px; */
+        /* width: 170px; */
+        height: 240px;
     }
+    
   }
   @media(max-width: 940px){
-    .cards .card{
-        width: 150px;
-        /* height: 120px; */
-    }
+   
     .cards .card h3{
         font-size: 16px;
     }
@@ -70,30 +50,31 @@
     }
     .cards .card .companyimg{
         width: 120px;
-        padding-top: 30px;
     }
-    #krishidoot{
-        width: 60px;
-        padding-top: 30px;
-    }
+    
   }
   @media (max-width: 890px) {
     .main .main-content {
-      bottom: -3%;
+      height: 240px;
+      bottom: -5%;
       font-size: 13px;
 
     }
-    .main .tree .btns a {
-      font-size: 13px;
-    }
+    .about .about-content {
+      margin-top: 35px;
+  }
+  .vertical{
+    padding-bottom: 20px;
+  }
+
     /* .about .about-content {
       margin-top: 140px;
     } */
   }
   @media (max-width: 768px) {
-    .navbar {
+    .navbar .nav-container{
       width: 100%;
-      padding: 20px 40px;
+      padding: 10px 40px;
     }
     .navbar .logo {
       width: 112px;
@@ -102,12 +83,13 @@
       display: block;
     }
     .main .tree {
-      top: -22px;
+      top: 0px;
+      z-index: 8;
     }
     .main .main-content {
-      bottom: -20%;
-      height: 280px;
-    }
+      bottom: -19%;
+      height: 245px;
+  }
     .main .main-content h2 {
         width: 100%;
         padding: 0px 45px;
@@ -137,10 +119,11 @@
     .about .about-content {
         width: 100%;
         padding:  0px 20px;
-      margin-top: 130px;
+      margin-top: 120px;
       text-align: center;
     }
-    .about-kaktag .about-kaktag-content {
+    .about-kaktag .about-kaktag-content,
+    .impact .impact-container {
         width: 100%;
         padding:  0px 20px;
       text-align: center;
@@ -154,10 +137,12 @@
     }
     .about h2,
     .about-kaktag h2,
-    .vertical .vertical-container h2  {
+    .vertical .vertical-container h2,
+    .impact .impact-container h2  {
       font-size: 30px;
     }
-    .about-kaktag h2{
+    .about-kaktag h2,
+    .impact .impact-container h2{
         padding: 15px 0px;
     }
     .about .about-leaf {
@@ -188,7 +173,7 @@
     .vertical .right-leaf{
        
             width: 30px;
-            top: 3%;
+            top: 1%;
             right: 7%;
 
     }
@@ -208,12 +193,24 @@
         left: 10%;
     }
     .cards{
-        grid-template-columns: repeat(2, 1fr);
-        gap: 28px;
+       padding: 20px 0px;
     }
     .cards .card{
-        width: 100%;
+      width: 100% !important;
     }
+    .cards .card .card-text{
+      padding: 20px;
+      height: 105px;
+      font-size: 20px;
+    }
+    
+    #krishidoot{
+      margin-top: -6px;
+  }
+  .impact {
+    background-color: #f7f7f7;
+    padding-bottom: 30px;
+}
     .footer-container{
         width: 100%;
         flex-direction: column-reverse;
@@ -244,35 +241,35 @@
       width: 600px;
     }
     .main .main-content {
-        height: 250px;
-      bottom: -22%;
+      height: 245px;
+      bottom: -25%;
       padding-bottom: 10px;
-    }
+  }
     .main .tree .btns a {
-      font-size: 12px;
+      font-size: 13px;
     }
     .btns .btn1 {
-      top: 8%;
-      right: 14%;
+      top: 16%;
+      right: 6%;
     }
     .btns .btn2 {
-      top: 23%;
-      right: 17%;
-    }
+      top: 21%;
+      right: 7%;
+  }
     .btns .btn3 {
-      top: 40%;
-      right: 3%;
+      top: 32%;
+      right: 4%;
     }
     .btns .btn4 {
       top: 36%;
-      left: 3%;
+      left: 4%;
     }
     .btns .btn5 {
       top: 18%;
-      left: 17%;
+      left: 16%;
     }
     .about .about-content {
-        margin-top: 120px;
+        margin-top: 135px;
     }
     .footer-container .links ul li a{
         padding-right: 8px;
@@ -286,31 +283,48 @@
   }
   
   @media (max-width: 570px) {
-    /* .temp-br {
+    .temp-br {
       display: block;
       line-height: 0px;
-    } */
+    }
     .main .tree {
       width: 520px;
     }
     .main .main-content {
-        height: 260px;
-      bottom: -29%;
+        height: 240px;
+      bottom: -30%;
     }
     .main .main-content h2 {
         width: 100%;
         padding: 0px 35px;
     }
-    .main .tree .btns a {
-      font-size: 11px;
-    }
+    .btns .btn1 {
+      top: 14%;
+      right: 9%;
+  }
+  .btns .btn2 {
+    top: 21%;
+    right: 6%;
+}
+.btns .btn3 {
+  top: 32%;
+  right: 3%;
+}
+.btns .btn4 {
+  top: 36%;
+  left: 3%;
+}
+.btns .btn5 {
+  top: 18%;
+  left: 16%;
+}
     .about-kaktag .about-kleaf {
         position: absolute;
         bottom: 2%;
         left: 5%;
       }
     .about .about-content {
-      margin-top: 135px;
+      margin-top: 145px;
     }
     .footer-container{
         gap: 10px;
@@ -340,36 +354,14 @@
     }
     .main .main-content{
         height: 280px;
-        bottom: -39%;
+        bottom: -44%;
         padding-bottom: 10px;
     }
     .main .tree .btns a {
-        font-size: 13px;
+        font-size: 12px;
     }
-    .temp-br {
-      display: block;
-      line-height: 0px;
-    }
-    .btns .btn1 {
-      top: 6%;
-      right: 17%;
-    }
-    .btns .btn2 {
-      top: 23%;
-      right: 17%;
-    }
-    .btns .btn3 {
-      top: 39%;
-      right: 5%;
-    }
-    .btns .btn4 {
-      top: 34%;
-      left: 6%;
-    }
-    .btns .btn5 {
-      top: 16%;
-      left: 19%;
-    }
+    
+    
     .left-leaf{
         width: 50px;
     }
@@ -388,8 +380,12 @@
       margin-top: 170px;
     }
     .about h2, .about-kaktag h2,
-    .vertical .vertical-container h2  {
+    .vertical .vertical-container h2,
+    .impact .impact-container h2  {
         font-size: 25px;
+    }
+    .impact{
+      padding-bottom: 20px;
     }
     .footer-container .logo {
         width: 100px;
@@ -421,14 +417,18 @@
     }
     .main .main-content {
       height: 270px;
-      bottom: -46%;
+      bottom: -53%;
       font-size: 12px;
     }
+    .main .tree .btns a {
+      font-size: 12px;
+  }
     .about .about-content {
-      margin-top: 185px;
+      margin-top: 200px;
   }
   .about h2, .about-kaktag h2,
-    .vertical .vertical-container h2  {
+    .vertical .vertical-container h2,
+    .impact .impact-container h2   {
         padding: 16px 0px;
     }
     .about .about-leaf {
@@ -436,26 +436,24 @@
         right: 10%;
     }
     .btns .btn1 {
-        top: 5%;
-        right: 14%;
+        top: 13%;
+        right: 11%;
       }
       .btns .btn2 {
-        top: 20%;
-        right: 16%;
-        font-size: 11.6px !important;
-        font-weight: 700 !important;
+        top: 21%;
+        right: 4%;
       }
       .btns .btn3 {
-        top: 36%;
-        right: 5%;
+        top: 32%;
+        right: 4%;
       }
       .btns .btn4 {
-        top: 32%;
-        left: 6%;
+        top: 36%;
+        left: 4%;
       }
       .btns .btn5 {
-        top: 15%;
-        left: 16%;
+        top: 18%;
+        left: 13%;
       }
       .footer-container{
         gap: 5px;
@@ -466,18 +464,18 @@
       
   }
 
-  @media (max-width: 425px){
+  @media (max-width: 430px){
     .main .tree {
-        width: 380px;
+        width: 400px;
+        
     }
     .main .main-content {
-      height: 290px;
-        bottom: -61%;
+      height: 300px;
+        bottom: -68%;
         font-size: 12px;
     }
     .main .tree .btns a {
         font-size: 12px;
-        font-weight: 700;
     }
     .main .main-content {
         padding-bottom: 15px;
@@ -487,38 +485,38 @@
         padding: 0px 20px;
     }
         .about .about-content {
-            margin-top: 212px;
+            margin-top: 240px;
         }
-        .btns .btn2 {
-          top: 20%;
-          right: 15%;
-          font-size: 10.5px !important;
-          font-weight: 700 !important;
+        .btns .btn4 {
+          top: 36%;
+          left: 3%;
       }
       .about .about-leaf {
         top: 1%;
         right: 10%;
     }
-    .about h2,.about-kaktag h2{
+    .about h2,.about-kaktag h2,
+    .impact .impact-container h2 {
       padding: 12px 0px;
     }
+    .cards{
+      padding: 10px 0px;
+   }
 
     
   }
 
   @media (max-width: 400px){
     .main .tree {
-        width: 360px;
+        width: 370px;
     }
     
     .main .main-content {
-      height: 310px;
-        bottom: -72%;
+        bottom: -75%;
         font-size: 12px;
     }
     .main .tree .btns a {
         font-size: 11px;
-        font-weight: 700;
     }
     .main .main-content {
         padding-bottom: 15px;
@@ -528,8 +526,16 @@
         padding: 0px 20px;
     }
     .about .about-content {
-        margin-top: 240px;
+        margin-top: 245px;
     }
+    .btns .btn2 {
+      top: 21%;
+      right: 4%;
+  }
+  .cards{
+    padding: 0px 0px;
+    padding-top: 10px;
+ }
   }
 
   
@@ -539,21 +545,16 @@
     }
     .main .main-content {
       height: 315px;
-        bottom: -78%;
+        bottom: -89%;
         font-size: 12px;
     }
     .main .tree .btns a {
-        font-size: 10px;
-        font-weight: 700;
+        font-size: 11px;
     }
     .about h2{
         padding: 10px 0px;
     }
-    .btns .btn2 {
-      top: 20%;
-      right: 15%;
-      font-size: 9.8px !important;
-      }
+  
     .main .main-content {
         padding-bottom: 15px;
     }
@@ -576,43 +577,53 @@
         right: 5%;
     }
     .about .about-content {
-        margin-top: 246px;
+        margin-top: 268px;
     }
+    .btns .btn1 {
+      top: 12%;
+      right: 11%;
+  }
+  .btns .btn5 {
+    top: 18%;
+    left: 12%;
+}
   }
 
   @media (max-width:320px){
     .main .tree {
-        width: 300px;
+        width: 310px;
     }
     .main .main-content {
       height: 330px;
-        bottom: -96%;
+        bottom: -105%;
         font-size: 12px;
         padding-bottom: 10px;
     }
+    .main .tree .btns a {
+      font-size: 10px;
+  }
     .btns .btn1 {
-      top: 5%;
-      right: 13%;
+      top: 12%;
+      right: 11%;
   }
     .btns .btn2 {
       top: 20%;
-      right: 15%;
-      font-size: 8.8px !important;
+      right: 3%;
   }
   .btns .btn3 {
-    top: 36%;
+    top: 32%;
     right: 4%;
 }
 .btns .btn4 {
-  top: 32%;
-  left: 5%;
+  top: 36%;
+  left: 3%;
 }
 .btns .btn5 {
-  top: 14%;
-  left: 16%;
+  top: 17%;
+  left: 12%;
 }
 .about .about-content {
-  margin-top: 270px;
+  margin-top: 286px;
 }
   }
   /* responsive end */
