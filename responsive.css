@@ -530,10 +530,14 @@
       bottom: -6%;
         
     }
-    .main-content p,
-    .about p, .about-kaktag p, .portfolio .portfolio-container .portfolio-content p, .impact-container p, .cards .card p{
+    .main-content p{
       font-size: 2vmax;
        font-weight: 500; 
+       line-height: 1.32;
+    }
+    .about p, .about-kaktag p, .portfolio .portfolio-container .portfolio-content p, .impact-container p, .cards .card p{
+      font-size: 2vmax;
+       font-weight: 400; 
        line-height: 1.32;
     }
     .main .tree .btns a {
