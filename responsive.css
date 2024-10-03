@@ -1,4 +1,14 @@
 /* responsive start */
+
+@media (max-width: 2560px){
+  .main .main-content{
+    height: 250px;
+    bottom: 1%;
+  }
+  /* .about{
+    margin-top: 80px;
+  } */
+}
 @media (max-width: 1260px) {
     /* .about .about-content {
       margin-top: 100px;
@@ -15,26 +25,30 @@
     } */
   }
 
-  @media (max-width: 1150px){
-    /* .cards .card{
-        width: 180px;
-    } */
-    /* .cards .card .card-text{
-      height: 105px;
-    } */
-   
-  }
-  @media (max-width: 1050px) {
+  @media (max-width: 1230px){
     .main .main-content {
-    
+      height: 220px;
       font-size: 14px;
+      bottom: 5%;
       padding-bottom: 10px;
   
     }
-    /* .about .about-content {
-      margin-top: 5px;
-    } */
-  
+    .about  {
+      margin-top: 0px;
+    }
+    
+  }
+  @media (max-width: 1050px) {
+   
+    .about, .about-kaktag{
+      margin-top: 0px;
+    }
+    .portfolio{
+      padding: 10px 0px;
+    }
+    .cards{
+      padding: 20px 0px;
+    }
     
   }
   @media(max-width: 940px){
@@ -50,8 +64,8 @@
   }
   @media (max-width: 890px) {
     .main .main-content {
-      height: 320px;
-      bottom: -8%;
+      height: 260px;
+      bottom: 0%;
       font-size: 13px;
 
     }
@@ -68,7 +82,7 @@
     width: 55px;
 }
     .about  {
-      margin-top: 70px;
+      margin-top: 20px;
   }
   .portfolio{
     padding-bottom: 20px;
@@ -90,16 +104,19 @@
       display: block;
     }
     .main .tree {
-      top: -22px;
+      top: -20px;
       z-index: 8;
     }
     .main-content p{
       width: 100%;
       padding: 0px 20px;
+      /* font-size: 15px !important;
+      line-height: 25px;
+      font-weight: 500 !important; */
     }
     .main .main-content {
-      bottom: -11%;
-      height: 260px;
+      bottom: -2%;
+      height: 200px;
   }
     .main .main-content h2 {
         width: 100%;
@@ -125,16 +142,22 @@
     }
     .about,
     .about-kaktag{
-        padding-bottom: 20px;
+        padding-bottom: 10px;
     }
     .about{
-      margin-top: 85px;
+      margin-top: 80px;
     }
     .about .about-content {
         width: 100%;
         padding:  0px 20px;
      
       text-align: center;
+    }
+    .about{
+      margin-top: 28px;
+    }
+    .about-kaktag{
+      margin-top: 0px;
     }
     .about-kaktag .about-kaktag-content,
     .impact .impact-container {
@@ -153,7 +176,7 @@
     .about-kaktag h2,
     .portfolio .portfolio-container h2,
     .impact .impact-container h2  {
-      font-size: 30px;
+      font-size: 20px;
     }
     .about-kaktag h2,
     .impact .impact-container h2{
@@ -179,7 +202,7 @@
       width: 100%;
     }
     .portfolio-container h2 {
-        font-size: 25px;
+        /* font-size: 25px; */
         padding: 10px 0px !important;
         padding-top: 0px !important;
     }
@@ -211,7 +234,7 @@
         width: 32px;
     }
     .cards{
-       padding: 30px 0px;
+       padding: 20px 0px;
     }
     .cards .card{
       width: 100% !important;
@@ -224,7 +247,7 @@
       margin-top: -6px;
   }
   .impact {
-    margin-top: 10px;
+    margin-top: 0px;
     padding-bottom: 30px;
 }
 .about-lleaf {
@@ -261,10 +284,19 @@
   width: 100%;
 
 }
-.main-content p, .about p, .about-kaktag p, .portfolio .portfolio-container .portfolio-content p, .impact-container p{
-  font-size: 14px;
-  line-height: 24px;
+.cards .card-container{
+  width: 100%;
 }
+/* .cards .card p{
+  font-size: 14px;
+} */
+.portfolio-content p{
+  width: 101%;
+}
+ /* .about p, .about-kaktag p, .portfolio .portfolio-container .portfolio-content p, .impact-container p{
+  font-size: 14px;
+  line-height: 22px;
+} */
     .footer-container{
         width: 100%;
         flex-direction: column-reverse;
@@ -302,9 +334,10 @@
       width: 600px;
     }
     .main .main-content {
-      height: 260px;
-        bottom: -16%;
+      height: 170px;
+        bottom: -1%;
         padding-bottom: 10px;
+        
   }
     .main .tree .btns a {
       font-size: 13px;
@@ -329,9 +362,9 @@
       top: 18%;
       left: 15%;
     }
-    .about  {
+    /* .about  {
         margin-top: 106px;
-    }
+    } */
     .footer-container .links ul li a{
         padding-right: 8px;
     }
@@ -352,8 +385,8 @@
       width: 520px;
     }
     .main .main-content {
-        height: 240px;
-      bottom: -19%;
+      height: 150px;
+      bottom: -1%;
     }
     .main .main-content h2 {
         width: 100%;
@@ -380,7 +413,7 @@
   left: 14%;
 }
 .about  {
-  margin-top: 106px;
+  margin-top: 15px;
 }
     .about-kaktag .about-kleaf {
         position: absolute;
@@ -411,16 +444,14 @@
   }
   
   @media (max-width: 490px) {
-    .navbar {
-      padding: 10px 20px;
-    }
+  
     .main .tree {
       width: 470px;
     }
     .main .main-content{
-      height: 250px;
-      bottom: -26%;
-      font-size: 12px;
+      height: 138px;
+      bottom: -1%;
+      /* font-size: 12px; */
     }
     .main .tree .btns a {
         font-size: 12px;
@@ -455,9 +486,9 @@
     .about-kaktag{
         padding-bottom: 10px;
     }
-    .about {
+    /* .about {
       margin-top: 130px;
-    }
+    } */
     .about h2, .about-kaktag h2,
     .portfolio .portfolio-container h2,
     .impact .impact-container h2  {
@@ -495,20 +526,35 @@
         width: 440px;
     }
     .main .main-content {
-      height: 250px;
-      bottom: -30%;
-      font-size: 12px;
+      height: 150px;
+      bottom: -6%;
+        
+    }
+    .main-content p,
+    .about p, .about-kaktag p, .portfolio .portfolio-container .portfolio-content p, .impact-container p, .cards .card p{
+      font-size: 2vmax;
+       font-weight: 500; 
+       line-height: 1.32;
     }
     .main .tree .btns a {
       font-size: 12px;
   }
     .about {
-      margin-top: 138px;
+      margin-top: 40px;
   }
+  .cards .card{
+    height: 200px;
+  }
+  /* .cards .card p {
+    font-size: 12px;
+} */
   .about h2, .about-kaktag h2,
     .portfolio .portfolio-container h2,
     .impact .impact-container h2   {
-        padding: 16px 0px;
+      font-size: 3vmax;
+      
+        font-weight: 600;
+        padding: 5px 0px !important;
     }
     .about .about-leaf {
         top: 3%;
@@ -534,8 +580,14 @@
         top: 17%;
         left: 14%;
       }
+      .portfolio {
+        padding: 20px 0px;
+    }
       .footer-container{
         gap: 5px;
+    }
+    .footer-container .links ul li a{
+      font-size: 10px;
     }
     .footer-container .links p{
         padding-top: 10px;
@@ -549,38 +601,72 @@
         
     }
     .main .main-content {
-        height: 272px;
-        bottom: -41%;
-        font-size: 12px;
+      height: 220px;
+      bottom: -27%;
+        /* font-size: 12px; */
+      padding-bottom: 15px;
     }
     .main .tree .btns a {
-        font-size: 12px;
+        font-size: 11px;
     }
-    .main .main-content {
-        padding-bottom: 15px;
-    }
+    
     .main .main-content h2 {
         width: 100%;
         padding: 0px 20px;
     }
-    .cards .card p {
-      font-size: 16px;
-    }
+    .about, .about-kaktag {
+      padding: 10px 0px;
+  }
+  .cards .card .card-img {
+    width: 100px;
+  }
     .cards .card .top {
     
-      gap: 20px;
+      gap: 15px;
   }
         .about  {
-            margin-top: 285px;
+            margin-top: 100px;
         }
         .btns .btn4 {
           top: 34%;
-          left: 1%;
+          left: 2%;
       }
+      .left-leaf {
+        top: 0% !important;
+        left: 4% !important;
+    }
+      .right-leaf {
+        width: 30px;
+        top: 9%;
+        right: 3%;
+    }
       .about .about-leaf {
         top: 1%;
         right: 10%;
+        width: 30px;
     }
+    .portfolio .right-leaf {
+      width: 30px;
+      top: 1%;
+      right: 7%;
+  }
+  .about-rleaf {
+    position: absolute;
+    top: 8%;
+    right: 8%;
+    width: 30px;
+}
+.portfolio .left-leaf {
+  position: absolute;
+  left: 10%;
+  width: 25px;
+}
+.about-lleaf {
+  position: absolute;
+  left: 8%;
+  top: 4%;
+  width: 25px;
+}
     .about h2,.about-kaktag h2,
     .impact .impact-container h2 {
       padding: 12px 0px;
@@ -588,6 +674,12 @@
     .cards{
       padding: 10px 0px;
    }
+   .footer-container p {
+    font-size: 12px;
+  }
+  #about, #portfolio, #kaktag, #impact{
+    scroll-margin-top: 70px;
+  }
 
     
   }
@@ -597,24 +689,32 @@
         width: 370px;
     }
     
-    .main .main-content {
-      height: 270px;
-      bottom: -46%;
-      font-size: 12px;
-    }
+    
     .main .tree .btns a {
-        font-size: 11px;
+        font-size: 10px;
     }
+    /* .main .main-content {
+      height: 130px;
+      bottom: -7%;
+    
+      padding-bottom: 15px;
+    } */
     .main .main-content {
-        padding-bottom: 15px;
+      height: 200px;
+      bottom: -26%;
+        /* font-size: 12px; */
+      padding-bottom: 15px;
     }
+    .about  {
+      margin-top: 100px;
+  }
     .main .main-content h2 {
         width: 100%;
         padding: 0px 20px;
     }
-    .about  {
-      margin-top: 175px;
-  }
+    /* .about  {
+      margin-top: 30px;
+  } */
     .btns .btn2 {
       top: 21%;
       right: 4%;
@@ -623,14 +723,18 @@
     padding: 0px 0px;
     padding-top: 10px;
  }
+
   }
 
   @media (max-width:386px){
-    .main .main-content {
-      height: 290px;
-        bottom: -52%;
-        font-size: 12px;
+    /* .main .main-content {
+      height: 130px;
+      bottom: -7%;
+    
     }
+    .about {
+      margin-top: 30px;
+  } */
   }
   
   @media (max-width: 360px) {
@@ -638,11 +742,14 @@
         width: 340px;
     }
     .main .main-content {
-      height: 290px;
-      bottom: -58%;
-    }
+      height: 180px;
+      bottom: -25%;
+  }
+  .main-content p{
+    font-size: 1.8vmax;
+  }
     .main .tree .btns a {
-        font-size: 11px;
+        font-size: 10px;
     }
     .about h2{
         padding: 10px 0px;
@@ -665,13 +772,14 @@
         bottom: 1%;
         left: 14%;
     }
+    .about{
+      margin-top: 90px;
+    }
     .about .about-leaf {
         top: 0%;
         right: 5%;
     }
-    .about {
-      margin-top: 200px;
-    }
+    
     .btns .btn1 {
       top: 12%;
       right: 9%;
@@ -682,7 +790,7 @@
 }
   .btns .btn5 {
     top: 17%;
-    left: 12%;
+    left: 13%;
 }
   }
 
@@ -691,9 +799,9 @@
         width: 310px;
     }
     .main .main-content {
-      height: 310px;
-        bottom: -73%;
-        font-size: 12px;
+      height: 140px;
+      bottom: -15%;
+      /* font-size: 12px; */
     }
     .main .tree .btns a {
       font-size: 10px;
@@ -719,7 +827,7 @@
   left: 12%;
 }
 .about  {
-  margin-top: 410px;
+  margin-top: 50px;
 }
   }
   /* responsive end */

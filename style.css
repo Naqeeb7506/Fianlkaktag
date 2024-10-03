@@ -38,7 +38,7 @@ p{
   border-bottom: 1px solid #f7f7f7;
 }
 .navbar .nav-container{
-  width: 75%;
+  width: 78%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -64,7 +64,7 @@ p{
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   height: 100%;
   background-color: #fff;
   color: #000;
@@ -166,7 +166,7 @@ p{
 }
 .main .tree .btns a:hover{
   color: #fff;
-  text-shadow: 2px 2px 4px #000000;
+  /* text-shadow: 2px 2px 4px #000000; */
 }
 
 .btns .btn1 {
@@ -195,8 +195,9 @@ p{
   left: 15%;
 }
 .main .main-content {
+  width: 100%;
   background-color: #f7f7f7;
-  height: 260px;
+  height: 250px;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -205,7 +206,7 @@ p{
   padding-bottom: 14px;
   z-index: 1;
   position: absolute;
-  bottom: -1%;
+  bottom: 1%;
   font-size: 16px;
 }
 
@@ -253,7 +254,7 @@ p{
   position: relative;
   padding-bottom: 20px;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 .about .about-content{
   width: 52%;
@@ -263,21 +264,26 @@ p{
 .about-kaktag h2,
 .portfolio .portfolio-container h2,
 .impact-container h2{
-  font-size: 25px;
+  font-size: 2.438vmax;
+  
+    font-weight: 700;
   padding: 10px 0px;
 color:   #4e4e4e;
 }
 .main-content p {
-  width: 50%;
+  width: 52%;
   margin:0 auto;
+  font-size: 1.133vmax;
+  font-weight: 500;
+  line-height: 1.813vmax;
 }
-.main-content p ,.about p,
+.about p,
 .about-kaktag p,
 .portfolio .portfolio-container .portfolio-content p,
 .impact-container p{
-  font-size: 16px;
-  line-height: 28px;
-  font-weight: 500;
+  font-size: 1.063vmax;
+  line-height: 1.813vmax;
+  font-weight: 400;
   /* padding-right: 50px; */
 }
 .about .about-leaf {
@@ -299,8 +305,7 @@ color:   #4e4e4e;
   width: 100%;
   position: relative;
   background-color: #fff;
-  padding-top: 30px;
-  padding-bottom: 25px;
+  padding: 20px 0px;
   text-align: center;
 }
 .portfolio .vleaf{
@@ -343,8 +348,8 @@ color:   #4e4e4e;
   top: 5%;
 }
 .cards .card-container {
-  /* width: 75%;
-  margin: 0 auto; */
+  width: 70%;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(2,1fr);
   justify-content: center;
@@ -364,17 +369,16 @@ color:   #4e4e4e;
   align-items: flex-start;
   justify-content: space-between;
   text-align: start;
-  transition: background-size 0.3s ease;
+  transition: all 2s ease;
 }
 .cards .card  p{
   color: #fff !important;
-  font-size: 18px;
+  font-size: 1.063vmax; 
+  line-height: 1.813vmax;
   width: 100%;
   /* padding: 0px 25px; */
 }
-.cards .card:hover {
-  background-size: 180%;
-}
+
 .cards .card .top{
   display: flex;
   flex-direction: column;
@@ -402,25 +406,25 @@ color:   #4e4e4e;
 }
 
 .card1 {
-  background: url("Images/BG1.svg");
+  background: url("Images/box1.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 .card2 {
-  background: url("Images/BG2.svg");
+  background: url("Images/box2.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 .card3 {
-  background: url("Images/BG3.svg");
+  background: url("Images/box3.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 .card4 {
-  background: url("Images/BG4.svg");
+  background: url("Images/box4.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -453,7 +457,7 @@ color:   #4e4e4e;
 
 /* About kaktag start */
 .about-kaktag{
-  margin-top: 10px;
+  margin-top: 0px;
 }
 .about-kaktag .about-kaktag-content {
   width: 52%;
@@ -483,9 +487,9 @@ color:   #4e4e4e;
 /* impact start */
 .impact{
   background-color: #fff;
-  padding-bottom: 50px;
+  padding-bottom: 40px;
   text-align: center;
-  margin-top: 40px;
+  margin-top: 20px;
   position: relative;
 }
 .impact-container{
@@ -534,9 +538,10 @@ footer{
   text-decoration: none;
   color:  #333333 !important;
   padding-right: 15px;
-  font-weight: 600;
+  font-weight: 500;
   transition: all 0.2s ease-in-out;
-  font-size: 18px;
+  font-size: 1vmax;
+    font-weight: 500;
 }
 .footer-container .logo{
   width: 100px;
@@ -555,7 +560,7 @@ footer{
 .footer-container .go-to-top{
   position: absolute;
   top: -20px;
-  right: 0%;
+  right: -8%;
   width: 40px;
 }
 .footer-container .go-to-top img{
